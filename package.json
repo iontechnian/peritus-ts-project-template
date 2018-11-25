@@ -1,0 +1,51 @@
+{
+  "name": "backend-ts",
+  "version": "1.0.0",
+  "description": "backend-ts",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project tsconfig.json src/**/*.ts",
+    "lint:one": "tslint --project tsconfig.json",
+    "lint:write": "tslint --project tsconfig.json src/**/*.ts --fix",
+    "lint:write:one": "tslint --project tsconfig.json --fix",
+    "prettier": "prettier --write src/**/*.ts",
+    "prettier:one": "prettier --write",
+    "lintAndPretty": "npm run lint:write && npm run prettier",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iontechnian/backend-ts.git"
+  },
+  "author": "Ilan G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iontechnian/backend-ts/issues"
+  },
+  "homepage": "https://github.com/iontechnian/backend-ts#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "npm run lint:write:one",
+      "npm run prettier:one",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1"
+  }
+}
