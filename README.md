@@ -28,7 +28,7 @@ const msg = 'Hello, World!'
 
 ### Husky
 (Disclaimer: If you're allergic to canines this module might not be for you)  
-[Husky](https://github.com/typicode/husky) allows you to define a commands to run when certain git hooks are triggered, so when you're about to commit or push something, you can have a script run to, say, make sure your code is all nice and pretty before being allowed near the repo.
+[Husky](https://github.com/typicode/husky) allows you to define commands to run when certain git hooks are triggered, so when you're about to commit or push something, you can have a script run to, say, make sure your code is all nice and pretty before being allowed near the repo.
 
 ### Lint-Staged
 [Lint-Staged](https://github.com/okonet/lint-staged) simplifies the linting and prettifying process by running __only__ on files that have been staged, rather than all your files. This makes development quicker since you're only cleaning up the files you modified instead of all of them. You can't even process the amount of saved time this provides.
