@@ -1,2 +1,4 @@
 const test = 1;
-console.log(test);
+setInterval(() => {
+  console.log(test);
+}, 500);

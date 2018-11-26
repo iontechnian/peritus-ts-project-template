@@ -5,7 +5,8 @@
     ],
     "jsRules": {},
     "rules": {
-        "no-boolean-literal-compare": true
+        "no-boolean-literal-compare": true,
+        "align": false
     },
     "rulesDirectory": []
 }

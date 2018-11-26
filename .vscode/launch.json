@@ -16,7 +16,6 @@
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
             "protocol": "inspector",
-            "envFile": "${workspaceFolder}/.env",
         },
         {
             "name": "Debug transpiled",
@@ -29,7 +28,6 @@
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js",
             ],
-            "envFile": "${workspaceFolder}/.env",
         },
     ],
     "compounds": []
