@@ -11,7 +11,7 @@
     "lint:write:one": "tslint --project tsconfig.json --fix",
     "prettier": "prettier --write src/**/*.ts",
     "prettier:one": "prettier --write",
-    "lintAndPretty": "npm run lint:write && npm run prettier",
+    "lintAndPretty": "npm run prettier && npm run lint:write ",
     "build": "tsc"
   },
   "repository": {
@@ -31,8 +31,8 @@
   },
   "lint-staged": {
     "*.(ts|tsx)": [
-      "npm run lint:write:one",
       "npm run prettier:one",
+      "npm run lint:write:one",
       "git add"
     ]
   },

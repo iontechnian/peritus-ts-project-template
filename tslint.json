@@ -6,7 +6,9 @@
     "jsRules": {},
     "rules": {
         "no-boolean-literal-compare": true,
-        "align": false
+        "align": false,
+        "arrow-parens": false,
+        "ter-arrow-parens": false
     },
     "rulesDirectory": []
 }
